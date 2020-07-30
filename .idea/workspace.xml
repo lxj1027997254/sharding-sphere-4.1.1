@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="67b8d4e6-b5b0-40ea-abd3-3a94e2d5a572" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sharding-core/sharding-core-route/src/main/java/org/apache/shardingsphere/sharding/route/engine/ShardingRouteDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/sharding-core/sharding-core-route/src/main/java/org/apache/shardingsphere/sharding/route/engine/ShardingRouteDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sharding-core/sharding-core-route/src/main/java/org/apache/shardingsphere/sharding/route/engine/type/standard/ShardingStandardRoutingEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/sharding-core/sharding-core-route/src/main/java/org/apache/shardingsphere/sharding/route/engine/type/standard/ShardingStandardRoutingEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shardingsphere-underlying/shardingsphere-pluggable/src/main/java/org/apache/shardingsphere/underlying/pluggble/prepare/BasePrepareEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/shardingsphere-underlying/shardingsphere-pluggable/src/main/java/org/apache/shardingsphere/underlying/pluggble/prepare/BasePrepareEngine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +16,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -81,7 +79,7 @@
       <workItem from="1595989708886" duration="2056000" />
       <workItem from="1595992093650" duration="1639000" />
       <workItem from="1596097123530" duration="812000" />
-      <workItem from="1596098298348" duration="11252000" />
+      <workItem from="1596098298348" duration="11494000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1596106331681</created>
@@ -90,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596106331681</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="改写模块注释">
+      <created>1596110734365</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596110734365</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,7 +103,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="改写模块注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="改写模块注释" />
   </component>
   <component name="WindowStateProjectService">
     <state x="432" y="233" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1595989671509">
@@ -109,10 +115,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="529" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1595231468575" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1596105929538">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1596110831807">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596105929538" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596110831807" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1596101704581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -141,10 +147,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="182" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596099551729" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1596107006988">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1596110736679">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596107006988" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596110736678" />
+    <state x="475" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596110819855">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="475" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1596110819855" />
     <state x="61" y="62" key="new project wizard" timestamp="1595568063517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
