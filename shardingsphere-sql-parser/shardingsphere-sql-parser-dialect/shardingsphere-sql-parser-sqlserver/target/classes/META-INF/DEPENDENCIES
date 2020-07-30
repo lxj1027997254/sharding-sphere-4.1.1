@@ -1,0 +1,37 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+shardingsphere-sql-parser-sqlserver
+
+
+From: 'an unknown organization'
+  - Guava: Google Core Libraries for Java (http://code.google.com/p/guava-libraries/guava) com.google.guava:guava:bundle:18.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'ANTLR' (http://www.antlr.org)
+  - ANTLR 4 Runtime (http://www.antlr.org/antlr4-runtime) org.antlr:antlr4-runtime:jar:4.7.2
+    License: The BSD License  (http://www.antlr.org/license.html)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - JCL 1.1.1 implemented over SLF4J (http://www.slf4j.org) org.slf4j:jcl-over-slf4j:jar:1.7.7
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.7
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Commons Collections (http://commons.apache.org/proper/commons-collections/) org.apache.commons:commons-collections4:jar:4.2
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - shardingsphere-spi (http://shardingsphere.apache.org/shardingsphere-spi) org.apache.shardingsphere:shardingsphere-spi:jar:4.1.1
+    License: Apache License 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - shardingsphere-sql-parser-engine (http://shardingsphere.apache.org/shardingsphere-sql-parser/shardingsphere-sql-parser-engine) org.apache.shardingsphere:shardingsphere-sql-parser-engine:jar:4.1.1
+    License: Apache License 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - shardingsphere-sql-parser-spi (http://shardingsphere.apache.org/shardingsphere-sql-parser/shardingsphere-sql-parser-spi) org.apache.shardingsphere:shardingsphere-sql-parser-spi:jar:4.1.1
+    License: Apache License 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - shardingsphere-sql-parser-statement (http://shardingsphere.apache.org/shardingsphere-sql-parser/shardingsphere-sql-parser-statement) org.apache.shardingsphere:shardingsphere-sql-parser-statement:jar:4.1.1
+    License: Apache License 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

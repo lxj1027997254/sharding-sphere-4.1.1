@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.shardingsphere:sharding-transaction-xa-core:unknown">
+    <CLASSES>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-transaction-xa-core/unknown/sharding-transaction-xa-core-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-transaction-xa-core/unknown/sharding-transaction-xa-core-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-transaction-xa-core/unknown/sharding-transaction-xa-core-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

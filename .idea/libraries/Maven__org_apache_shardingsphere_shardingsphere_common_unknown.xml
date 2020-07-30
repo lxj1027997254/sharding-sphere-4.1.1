@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.shardingsphere:shardingsphere-common:unknown">
+    <CLASSES>
+      <root url="jar://D:/repository/org/apache/shardingsphere/shardingsphere-common/unknown/shardingsphere-common-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/org/apache/shardingsphere/shardingsphere-common/unknown/shardingsphere-common-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/org/apache/shardingsphere/shardingsphere-common/unknown/shardingsphere-common-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

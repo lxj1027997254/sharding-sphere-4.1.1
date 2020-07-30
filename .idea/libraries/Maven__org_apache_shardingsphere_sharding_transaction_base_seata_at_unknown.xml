@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.shardingsphere:sharding-transaction-base-seata-at:unknown">
+    <CLASSES>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-transaction-base-seata-at/unknown/sharding-transaction-base-seata-at-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-transaction-base-seata-at/unknown/sharding-transaction-base-seata-at-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-transaction-base-seata-at/unknown/sharding-transaction-base-seata-at-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

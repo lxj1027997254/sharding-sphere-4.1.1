@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.shardingsphere:sharding-core-api:unknown">
+    <CLASSES>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-core-api/unknown/sharding-core-api-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-core-api/unknown/sharding-core-api-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-core-api/unknown/sharding-core-api-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

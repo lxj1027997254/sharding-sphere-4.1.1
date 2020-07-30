@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.shardingsphere:sharding-jdbc-spring-namespace:unknown">
+    <CLASSES>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-jdbc-spring-namespace/unknown/sharding-jdbc-spring-namespace-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-jdbc-spring-namespace/unknown/sharding-jdbc-spring-namespace-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/repository/org/apache/shardingsphere/sharding-jdbc-spring-namespace/unknown/sharding-jdbc-spring-namespace-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
