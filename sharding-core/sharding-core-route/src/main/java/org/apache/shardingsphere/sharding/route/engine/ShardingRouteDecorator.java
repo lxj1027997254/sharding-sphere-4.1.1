@@ -60,7 +60,7 @@ public final class ShardingRouteDecorator implements RouteDecorator<ShardingRule
         // 校验更新分片键等情况
         ShardingStatementValidatorFactory.newInstance(
                 sqlStatementContext.getSqlStatement()).ifPresent(validator -> validator.validate(shardingRule, sqlStatementContext.getSqlStatement(), parameters));
-        // shardingCondition  1.插入语句生成主键 2.子查询情况（待修复）
+        // 返回where条件shardingConditions  另外1.插入语句生成主键 2.子查询情况（待修复）
         ShardingConditions shardingConditions = getShardingConditions(parameters, sqlStatementContext, metaData.getSchema(), shardingRule);
         // 子查询需要合并分片值
         boolean needMergeShardingValues = isNeedMergeShardingValues(sqlStatementContext, shardingRule);

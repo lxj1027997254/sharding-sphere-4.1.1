@@ -89,9 +89,11 @@ public final class ShardingStandardRoutingEngine implements ShardingRouteEngine 
     }
     
     private Collection<DataNode> getDataNodes(final ShardingRule shardingRule, final TableRule tableRule) {
+        // 通过hintManager获取分片值
         if (isRoutingByHint(shardingRule, tableRule)) {
             return routeByHint(shardingRule, tableRule);
         }
+        // 使用shardingConditions中的分片值
         if (isRoutingByShardingConditions(shardingRule, tableRule)) {
             return routeByShardingConditions(shardingRule, tableRule);
         }
