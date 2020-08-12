@@ -96,12 +96,12 @@ public abstract class BasePrepareEngine {
     private RouteContext executeRoute(final String sql, final List<Object> clonedParameters) {
         // 注册路由装饰器，key为分片规则，value为RouteDecorator
         registerRouteDecorator();
+        // 解析路由
         return route(router, sql, clonedParameters);
     }
     
     private void registerRouteDecorator() {
         for (Class<? extends RouteDecorator> each : OrderedRegistry.getRegisteredClasses(RouteDecorator.class)) {
-            //
             RouteDecorator routeDecorator = createRouteDecorator(each);
             Class<?> ruleClass = (Class<?>) routeDecorator.getType();
             // FIXME rule.getClass().getSuperclass() == ruleClass for orchestration, should decouple extend between orchestration rule and sharding rule
@@ -122,6 +122,7 @@ public abstract class BasePrepareEngine {
     
     private Collection<ExecutionUnit> executeRewrite(final String sql, final List<Object> parameters, final RouteContext routeContext) {
         registerRewriteDecorator();
+        // 创建sql重写上下文
         SQLRewriteContext sqlRewriteContext = rewriter.createSQLRewriteContext(sql, parameters, routeContext.getSqlStatementContext(), routeContext);
         // 根据路由结果重写
         return routeContext.getRouteResult().getRouteUnits().isEmpty() ? rewrite(sqlRewriteContext) : rewrite(routeContext, sqlRewriteContext);
@@ -154,6 +155,7 @@ public abstract class BasePrepareEngine {
     
     private Collection<ExecutionUnit> rewrite(final RouteContext routeContext, final SQLRewriteContext sqlRewriteContext) {
         Collection<ExecutionUnit> result = new LinkedHashSet<>();
+        // 改写结果，返回SQLRewriteResult
         for (Entry<RouteUnit, SQLRewriteResult> entry : new SQLRouteRewriteEngine().rewrite(sqlRewriteContext, routeContext.getRouteResult()).entrySet()) {
             // 改写数据源名
             result.add(new ExecutionUnit(entry.getKey().getDataSourceMapper().getActualName(), new SQLUnit(entry.getValue().getSql(), entry.getValue().getParameters())));

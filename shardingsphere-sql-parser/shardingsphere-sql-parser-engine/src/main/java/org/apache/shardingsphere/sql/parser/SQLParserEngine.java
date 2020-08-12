@@ -76,6 +76,7 @@ public final class SQLParserEngine {
                 return cachedSQLStatement.get();
             }
         }
+        // 两阶段生成抽象语法树
         ParseTree parseTree = new SQLParserExecutor(databaseTypeName, sql).execute().getRootNode();
         // 调用visit方法获取sqlstatement
         SQLStatement result = (SQLStatement) ParseTreeVisitorFactory.newInstance(databaseTypeName, VisitorRule.valueOf(parseTree.getClass())).visit(parseTree);

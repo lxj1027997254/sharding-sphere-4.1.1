@@ -47,6 +47,7 @@ public final class MasterSlaveRouteDecorator implements RouteDecorator<MasterSla
         Collection<RouteUnit> toBeRemoved = new LinkedList<>();
         Collection<RouteUnit> toBeAdded = new LinkedList<>();
         for (RouteUnit each : routeContext.getRouteResult().getRouteUnits()) {
+            // 如果每个dataNode均配置了读写分离，判断dataSource的actualName是否相同，相同则更改为真实的dataNode（只会更改一次）
             if (masterSlaveRule.getName().equalsIgnoreCase(each.getDataSourceMapper().getActualName())) {
                 toBeRemoved.add(each);
                 String actualDataSourceName = new MasterSlaveDataSourceRouter(masterSlaveRule).route(routeContext.getSqlStatementContext().getSqlStatement());

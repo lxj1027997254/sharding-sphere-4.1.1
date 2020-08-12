@@ -61,6 +61,7 @@ public final class ShardingConnection extends AbstractConnectionAdapter {
      * @return true or false
      */
     public boolean isHoldTransaction() {
+        // 本地事务非自动提交或XA事务，采用同步执行策略
         return (TransactionType.LOCAL == transactionType && !getAutoCommit()) || (TransactionType.XA == transactionType && isInShardingTransaction());
     }
     

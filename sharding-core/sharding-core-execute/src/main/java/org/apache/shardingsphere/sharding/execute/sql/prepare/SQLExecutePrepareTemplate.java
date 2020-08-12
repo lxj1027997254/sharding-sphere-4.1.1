@@ -56,6 +56,7 @@ public final class SQLExecutePrepareTemplate {
     
     private Collection<InputGroup<StatementExecuteUnit>> getSynchronizedExecuteUnitGroups(
             final Collection<ExecutionUnit> executionUnits, final SQLExecutePrepareCallback callback) throws SQLException {
+        // 根据执行单元数据源分组，同一数据源为一组
         Map<String, List<SQLUnit>> sqlUnitGroups = getSQLUnitGroups(executionUnits);
         Collection<InputGroup<StatementExecuteUnit>> result = new LinkedList<>();
         for (Entry<String, List<SQLUnit>> entry : sqlUnitGroups.entrySet()) {
@@ -77,9 +78,13 @@ public final class SQLExecutePrepareTemplate {
     
     private List<InputGroup<StatementExecuteUnit>> getSQLExecuteGroups(final String dataSourceName,
                                                                        final List<SQLUnit> sqlUnits, final SQLExecutePrepareCallback callback) throws SQLException {
+
         List<InputGroup<StatementExecuteUnit>> result = new LinkedList<>();
+        // 执行单元个数大于最大连接数则需要拆分,maxConnectionsSizePerQuery代表每个数据源单次查询最大连接数
         int desiredPartitionSize = Math.max(0 == sqlUnits.size() % maxConnectionsSizePerQuery ? sqlUnits.size() / maxConnectionsSizePerQuery : sqlUnits.size() / maxConnectionsSizePerQuery + 1, 1);
+        // 最终执行分组容量的容量（该分组内执行单元必为串行执行），比如2说明maxConnectionsSizePerQuery小于单库执行单元的数量，即数据库连接不够，这两个执行单元只能采用串行执行
         List<List<SQLUnit>> sqlUnitPartitions = Lists.partition(sqlUnits, desiredPartitionSize);
+        // 确定执行引擎
         ConnectionMode connectionMode = maxConnectionsSizePerQuery < sqlUnits.size() ? ConnectionMode.CONNECTION_STRICTLY : ConnectionMode.MEMORY_STRICTLY;
         List<Connection> connections = callback.getConnections(connectionMode, dataSourceName, sqlUnitPartitions.size());
         int count = 0;

@@ -52,6 +52,7 @@ public final class ShardingGeneratedKeyInsertValueParameterRewriter implements P
             parametersCount += insertStatementContext.getInsertValueContexts().get(count).getParametersCount();
             Comparable<?> generatedValue = generatedValues.next();
             if (!each.isEmpty()) {
+                // 从statementContext中获取并添加分布式主键
                 ((GroupedParameterBuilder) parameterBuilder).getParameterBuilders().get(count).addAddedParameters(parametersCount, Lists.newArrayList(generatedValue));
             }
             count++;

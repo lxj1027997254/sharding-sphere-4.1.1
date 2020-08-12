@@ -24,6 +24,7 @@ import org.apache.shardingsphere.core.rule.ShardingRule;
 import org.apache.shardingsphere.shardingjdbc.jdbc.core.datasource.ShardingDataSource;
 
 import javax.sql.DataSource;
+import java.io.File;
 import java.sql.SQLException;
 import java.util.Map;
 import java.util.Properties;
@@ -47,4 +48,5 @@ public final class ShardingDataSourceFactory {
             final Map<String, DataSource> dataSourceMap, final ShardingRuleConfiguration shardingRuleConfig, final Properties props) throws SQLException {
         return new ShardingDataSource(dataSourceMap, new ShardingRule(shardingRuleConfig, dataSourceMap.keySet()), props);
     }
+
 }
